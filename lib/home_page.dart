@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_ui/all_tab.dart';
+import 'package:youtube_ui/bottom_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -61,7 +62,11 @@ class _HomePageState extends State<HomePage> {
     return DefaultTabController(
       length: tabOpts.length,
       child: Scaffold(
+
+
         backgroundColor: Colors.grey[900],
+        
+
         appBar: AppBar(
           titleSpacing: 2.0,
           backgroundColor: Colors.black87,

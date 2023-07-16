@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_ui/bottom_bar.dart';
 
 import 'home_page.dart';
 
@@ -11,6 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(debugShowCheckedModeBanner: false,home: HomePage(),);
+    return const MaterialApp(debugShowCheckedModeBanner: false,home: MyBottomBar(),);
   }
 }
