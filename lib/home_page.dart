@@ -10,6 +10,19 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+
+
+  //list of images--------------------------
+
+  List imgagesList=[
+"images/img1.jpg",
+"images/img2.jpg",
+"images/img1.jpg",
+"images/img3.jpg",
+"images/img4.jpg",
+"images/img5.jpg",
+  ];
   //TextStyle style1 = const TextStyle(color: Colors.black);
 
   List<Widget> tabOpts = [
@@ -111,13 +124,14 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               TabBar(tabs: tabOpts),
-              const Expanded(
+               Expanded(
                 child: TabBarView(children: [
-                  AllTab(),
-                  AllTab(),
-                  AllTab(),
-                  AllTab(),
-                  AllTab(),
+                  AllTab(imgPath1: imgagesList[0],imgPath2: imgagesList[1],imgPath3: imgagesList[2],),
+                  AllTab(imgPath1: imgagesList[3],imgPath2: imgagesList[4],imgPath3: imgagesList[5],),
+                  AllTab(imgPath1: imgagesList[0],imgPath2: imgagesList[1],imgPath3: imgagesList[2],),
+                  AllTab(imgPath1: imgagesList[0],imgPath2: imgagesList[1],imgPath3: imgagesList[2],),
+                  AllTab(imgPath1: imgagesList[0],imgPath2: imgagesList[1],imgPath3: imgagesList[2],),
+                  
                 ]),
               )
             ],
